@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment1.RegisterPage">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#365f9c">
+            <Image Source="imgregister.png" />
+            <Label Text="Register" FontFamily="monospace" FontSize="Large" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold"/>
+            <Label Text="Please enter your profile information" Margin="5" FontSize="Medium" HorizontalTextAlignment="Center" TextColor="White" />
+            <Frame Margin="60,0,60,0" CornerRadius="10" Padding="0">
+                <Entry x:Name="RegEmailEntry" Placeholder ="E-mail address" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" />
+
+            </Frame>
+            <Frame Margin="60,0,60,0" CornerRadius="10" Padding="0">
+                <Entry x:Name="RegPswrd" Placeholder ="Password" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" IsPassword="True" />
+
+            </Frame>
+            <Frame Margin="60,0,60,0" CornerRadius="10" Padding="0">
+                <!--<Entry x:Name="regDob" Placeholder ="Date of Birth" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" />-->
+                <DatePicker x:Name="dobPicker" TextColor="Gray" Format="D" BackgroundColor="#333333"/>
+
+            </Frame>
+            <Frame Margin="60,0,60,0" CornerRadius="10" Padding="0">
+                <Entry x:Name="regWeight" Placeholder ="Weight" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" />
+
+            </Frame>
+            <Frame Margin="60,0,60,0" CornerRadius="10" Padding="0">
+                <Entry x:Name="regHeight" Placeholder ="Height" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" />
+
+            </Frame>
+            <Button Text="REGISTER" FontSize="Large" Clicked="Button_Clicked" FontAttributes="Bold" FontFamily="monospace" CornerRadius="20" BackgroundColor="#fa4700" Margin="100,0,100,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

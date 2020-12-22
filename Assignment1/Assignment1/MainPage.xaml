@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment1.MainPage">
+             
+             
+   <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row ="0" Grid.Column="0" BackgroundColor="#365f9c">
+            <Image Source="img3.png" />
+        </StackLayout> 
+                      
+        <StackLayout Grid.Row="1"
+                     Grid.Column="0" BackgroundColor="#365f9c">
+            <Label Text="Login Page" FontFamily="monospace" FontSize="Large" HorizontalTextAlignment="Center" TextColor="White" Margin="10" FontAttributes="Bold"/>
+            <Label Text="Please enter your credentials" FontFamily="monospace" FontSize="Medium" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" Margin="10"/>
+            <Frame Margin="20,0,20,0" CornerRadius="10" Padding="0">
+                <Entry x:Name="EmailEntry" Placeholder ="E-mail address" PlaceholderColor="Gray" BackgroundColor="#333333" 
+                   HeightRequest="50" />
+                
+            </Frame>
+            <Frame Margin="20,0,20,0" CornerRadius="10" Padding="0">
+                <Entry  x:Name="pswrdEntry" Placeholder ="Password" PlaceholderColor="gray" BackgroundColor="#333333" 
+                   HeightRequest="50" IsPassword="True"/>
+            </Frame>
+            <Button Text="Login" FontSize="Large" Clicked="Button_Clicked" FontAttributes="Bold" FontFamily="monospace" CornerRadius="20" BackgroundColor="#fa4700" Margin="100,0,100,0"/>
+            <Label HorizontalOptions="Center" Margin="0,5,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Not Registered?Sign up Here!"
+                              FontFamily="monospace"
+                              TextColor="White"
+                                TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ForgotPassword"/>
+
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+
+                </Label.FormattedText>
+
+            </Label>
+
+
+        </StackLayout>
+    </Grid>
+    
+    
+
+</ContentPage>   

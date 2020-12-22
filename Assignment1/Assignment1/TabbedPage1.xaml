@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment1.TabbedPage1"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <ContentPage Title="Home" IconImageSource="Home.ico" BackgroundImageSource="background1.jpg">
+        <StackLayout  >
+            <Label Text="Welcome Hakan!" FontSize="30" FontAttributes="Bold" Padding="40" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label Text="Our aim is to make you feel better and healthy." FontSize="18"  HorizontalOptions="Center" TextColor="White" />
+            <Grid RowSpacing="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    
+                                        
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                    
+                </Grid.RowDefinitions>
+                <Button Text="more details" TextColor="Black" BackgroundColor="#fa4700" Grid.Column="0" Grid.Row="0" FontSize="12" CornerRadius="20" WidthRequest="150" HeightRequest="32" HorizontalOptions="Start" Margin="30,10,0,0" />
+                <Button Text="View Your Profile" TextColor="Black" BackgroundColor="#fa4700" Grid.Column="1" Grid.Row="0"  FontSize="12" CornerRadius="20" WidthRequest="180" HeightRequest="32" HorizontalOptions="End" Margin="0,10,30,0"/>
+            </Grid>
+            <Grid RowSpacing="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Image Source="brain.ico"  Grid.Column="0" Grid.Row="0" Aspect="AspectFit" />
+                <Label Text="Brain Checkout" FontSize="18"  TextColor="Black" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" />
+                <Image Source="drugs.ico"  Grid.Column="0" Grid.Row="1" Aspect="AspectFit" />
+                <Label Text="Purchase Prescription" FontSize="18"  TextColor="Black" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" />
+                <Button Text="View" Grid.Column="2" Grid.Row="0" BackgroundColor="#fa4700" Margin="0,0,10,0" Padding="6" FontSize="Small" CornerRadius="20" HorizontalOptions="End" HeightRequest="29" WidthRequest="60" VerticalOptions="Center" />
+                <Button Text="Set" Grid.Column="2" Grid.Row="1" BackgroundColor="#fa4700" Margin="0,0,10,0" Padding="6" FontSize="Small" CornerRadius="20" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="29" WidthRequest="60" />
+
+
+            </Grid>    
+                
+                                                         
+
+            
+            <Label  Text="Do you want to visit a specialist?" CharacterSpacing="1" TextColor="Black" FontSize="18" Margin="25,0,0,0" />
+            <Grid ColumnSpacing="30" RowSpacing="30" Padding="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Image Source="doctor.ico" Grid.Column="0" Grid.Row="0"  Aspect="AspectFit"/>
+                <Label Text="Hakan Kadakal" Grid.Column="1" FontSize="18" FontAttributes="Bold" Grid.Row="0" VerticalOptions="Center"  TextColor="Black"/>
+                <Button Text="Book" Grid.Column="2" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Center" CornerRadius="20" WidthRequest="65" HeightRequest="35" BackgroundColor="#fa4700" TextColor="Black"/>
+            </Grid>
+            
+            
+
+
+            
+        </StackLayout>
+        
+    </ContentPage>
+
+    <ContentPage Title="Search" IconImageSource="Search.ico" BackgroundImageSource="background1.jpg"/>
+    <ContentPage Title="My Health" IconImageSource="MyHealth.ico" BackgroundImageSource="background1.jpg"/>
+    <ContentPage Title="My Profile" IconImageSource="Profile.ico" BackgroundImageSource="background1.jpg"/>
+
+
+
+
+
+
+
+</TabbedPage>
